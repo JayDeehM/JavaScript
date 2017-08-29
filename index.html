@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS</title>
+
+  <link rel="stylesheet" href="java.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="java.js"></script>
+
+
+<body>
+
+<button onclick='showDate()'>Display date</button>
+<button onclick='genIdea()'>Random activity generator</button>
+<button onclick='showCal()'>Calculator</button>
+<button onclick='areaCal()'>Area Calculator</button>
+
+<div id="display-date">
+  <p>Click the button to display the date.</p>
+  <button onclick="displayDate(this)">The time is?</button>
+</div>
+
+<div id='ideagen'>
+  <button onclick='generate()'>Generate a random activity</button>
+
+  <p id='idea'></p>
+</div>
+
+<div id='calculate'>
+  <div>
+    <label for='firstNum'>Enter first number:</label>
+    <input id="firstNum" type='integer' maxlength='25'></input><br />
+    <label for='secondNum'>Enter second number:</label>
+    <input id="secondNum" type='integer' maxlength='25'></input>
+  </div>
+
+  <div>
+    <button onclick='add()'>SUM</button>
+    <button onclick='dif()'>DIFFERENCE</button>
+    <button onclick='pro()'>PRODUCT</button>
+    <button onclick='quo()'>QUOTIENT</button>
+  </div>
+
+  <div>
+    <h1 id='result'></h1>
+  </div>
+</div>  
+
+<div id='area'>
+  
+  <button onclick='circleArea()'>Area of a circle</button>
+  <button onclick='triangleArea()'>Area of a triangle</button>
+
+  <div id='circle'>
+    <div>
+      <label for='rad'>Enter radius:</label>
+      <input id="rad" type='integer' maxlength='25'></input><br />
+    </div>
+    <div>
+      <button onclick='areacirc()'>Get Area</button>
+    </div>
+  </div>
+
+  <div id='triangle'>
+    <div>
+      <label for='Numone'>Enter base:</label>
+      <input id="Numone" type='integer' maxlength='25'></input><br />
+      <label for='Numtwo'>Enter height:</label>
+      <input id="Numtwo" type='integer' maxlength='25'></input>
+    </div>
+    <div>
+      <button onclick='areatri()'>Get Area</button>
+    </div>
+  </div>
+
+  <div>
+    <h1 id='areaans'></h1>
+  </div> 
+
+</div>
+
+</body>
+</html> 
